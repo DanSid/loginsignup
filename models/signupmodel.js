@@ -1,7 +1,8 @@
 import { Schema, model } from "mongoose";
 
 const signupSchema = new Schema({
-    name: { type: String, required:true, unique:true},
+    name: { type: String, required:true},
+    email: { type: String, required:true, unique:true},
     password: { type: String, required: true },
 });
 
